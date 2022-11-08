@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="contents" content="벤츠 사이트 카피">
+    <title>메르세데스-벤츠 코리아</title>
+
+    <!-- 브라우저 파비콘 삽입 -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/benzIcon.png">
+
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Old+Standard+TT&family=Tinos:ital@1&display=swap"
+        rel="stylesheet">
+
+    <!-- 애니메이션용 스타일  -->
+    <style>
+        #banner img {
+            transform: translate(1000px, 0);
+            transition: all 2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <div id="header_top">
+                <div class="container">
+                    <div id="logo">
+                        <a href=""><img src="img/benzIcon.png" alt=""></a>
+                    </div>
+                    <div id="tit">
+                        <a href="">Mercedes-Benz</a>
+                    </div>
+                    <div id="sub-tit">
+                        <a href="" id="sub_name">&#169 2022 메르세데스-벤츠 코리아(주)</a>
+                    </div>
+                    <div id="user">
+                        <a href="#pop_info" class="user_open"><img src="img/user_black.png" alt="유저"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- user 로그인 팝업 -->
+            <div class="popup_overlay"></div>
+            <div id="pop_info" class="pop_wrap">
+                <div class="pop_inner">
+                    <h1>Mercedes me 로그인</h1>
+                    <p>Mercedes me 계정으로 로그인하십시오.</p>
+                    <button id="pop_btn1" type="button"
+                        onclick="location.href='https://id.mercedes-benz.com/ciam/auth/login'">로그인</button>
+                    <button id="pop_btn2" type="button"
+                        onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/mercedes-me/services/national-consent-ng.html'">회원
+                        가입</button>
+                </div>
+            </div>
+
+            <!-- 헤더 내비 -->
+
+            <div id="header_nav">
+                <div class="container">
+                    <button><span></span>Models</button>
+                    <button>Buy Online</button>
+                    <button>Offers & Finance</button>
+                    <button>Owner's Area</button>
+                    <button>Our Brand</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div id="banner">
+            <img src="img/banner.jpg" alt="배너 이미지">
+            <!-- <div id="banner">
+            </div> -->
+            <div>
+                <h1>The Benz<br>E-Class</h1> <br><br><br>
+
+
+                <h2>모든 순간, 모든 감각을 깨우다.</h2>
+                <h2>This is for all senses.</h2><br>
+                <br><br><br><br>
+
+
+                <button class="btn1" type="button"
+                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/models/e-class/saloon-w213-fl/explore.html'">자세히
+                    보기</button>
+                <button class="btn2" type="button"
+                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/campaigns/2022/mercedes-eq-eqe.html#contact'">시승
+                    및 구매상담</button>
+            </div>
+
+
+        </div>
+
+        <!-- contents1 -->
+        <div id="contents1">
+            <div class="container">
+                <div class="cont_tit">
+                    <h1>더 알아보기</h1>
+                </div>
+                <div class="cont">
+                    <div class="card">
+                        <div class="card-box">
+                            <img src="img/G63.jpeg" alt="">
+                            <h2>메르세데스-AMG 55주년</h2>
+                            <h3>55년동안 지켜온 AMG를 기념한 85대 한정 모델, 메르세데스-AMG G 63 "에디션 55"를 지금 만나보세요</h3>
+                            <div class="card-btn"><button type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/campaigns/2022/mercedes-amg-g-63-edition-55.html'">자세히
+                                    알아보기</button></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-box">
+                            <img src="img/MBCertified_Conversion_KV_content.webp" alt="">
+                            <h2>메르세데스-벤츠 인증중고차 구매 <br> 혜택</h2>
+                            <h3>메르세데스-벤츠 인증중고차 구매 고객을 위한 한정판 프리미엄 여행 패키지 혜택을 확인해보세요!</h3>
+
+                            <div class="card-btn2">
+                                <button class="cb2-btn1" type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/campaigns/2022/mbcertified.html'">자세히
+                                    보기</button><br>
+                                <button class="cb2-btn2" type="button"
+                                    onclick="location.href='https://shop.mercedes-benz.com/ko-kr/shop/vehicle/srp/used?sort=relevance&assortment=vehicle'">메르세데스-벤츠
+                                    스토어 바로가기 </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-box">
+                            <img src="img/cs_classic_campaign.webp" alt="">
+                            <h2>2022 Classic Campaign</h2>
+                            <h3>선선한 가을 바람 같은 기분 좋은 혜택을 만나보세요!</h3>
+                            <div class="card-btn">
+                                <button type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/passengercars/mercedes-benz-cars/campaigns/2022/2022-cs-classic-campaign.html'">자세히
+                                    알아보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-box">
+                            <img src="img/innovationsByMerceds.webp" alt="">
+                            <h2>Innovations by Mercedes-Benz</h2>
+                            <h3>모빌리티의 미래를 선도하는 메르세데스-벤츠 <br> 더 발전된 주행 경험을 제공하기 위해 끊임없이 변화와 발전을 추구하는 메르세데스-벤츠의 혁신적인 주행
+                                기술을 확인해보세요.</h3>
+                            <div class="card-btn"><button type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/technology/magical-garage.html'">자세히
+                                    알아보기</button></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-box">
+                            <img src="img/visionEQXX.webp" alt="">
+                            <h2>VISION EQXX</h2>
+                            <h3>새로운 전기차 시대의 비전을 제시하는 메르세데스-벤츠의 콘셉트카 'VISION EQXX'에 대해 알아보세요.</h3>
+                            <div class="card-btn"><button type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/the-brand/eqxx.html'">자세히
+                                    알아보기</button></div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-box">
+                            <img src="img/citNow.webp" alt="">
+                            <h2>CitNOW</h2>
+                            <h3>직접 보여드리는 차량 점검 서비스</h3>
+                            <div class="card-btn2">
+                                <button class="cb2-btn1" type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/campaigns/2022/citnow.html'">자세히
+                                    보기</button><br>
+                                <button class="cb2-btn2" type="button"
+                                    onclick="location.href='https://www.mercedes-benz.co.kr/passengercars.html?group=all&subgroup=all.BODYTYPE.hatchback&view=BODYTYPE'">리플릿
+                                    다운로드</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <!-- contents2 -->
+        <div id="contents2"></div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="f-top">
+                <div class="container">
+                    <div><button id="upside" class="upSide"></button></div>
+                    <div><label for="upside">맨 위로</label></div>
+
+                    <!-- <span class="upSide">맨 위로</span> -->
+                </div>
+            </div>
+            <div class="f-mid">
+                <div class="container">
+                    <div class="cont-container">
+                        <h2 class="f-mid-tit">차량 정보</h2>
+                        <div>
+                            <ol>
+                                <li><a href="">모델 둘러보기</a></li><br>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/catalog/stage.module.html">카탈로그
+                                        다운로드</a></li><br>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/catalog/price.module.html">가격표
+                                        다운로드</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <h2 class="f-mid-tit">온라인 서비스</h2>
+                        <div>
+                            <ol>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/dealer-locator.html">딜러
+                                        검색</a></li><br>
+                                <li><a
+                                        href="https://shop.mercedes-benz.com/ko-kr/shop/vehicle/srp/used?sort=relevance&assortment=vehicle">인증
+                                        중고차 차량 검색</a></li><br>
+                                <li><a href="https://www.mercedes-benz-financial.co.kr/payment/">월 납입금 계산기</a></li><br>
+                                <li><a href="https://rentalquotationsmb.com/">장기렌터카 견적요청</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <h2 class="f-mid-tit">부품 및 리콜정보</h2>
+                        <div>
+                            <ol>
+                                <li><a href="https://parts-price.mercedes-benz.co.kr/?owda=misc">부품가격조회</a></li><br>
+                                <li><a href="https://www.car.go.kr/ri/stat/list.do">리콜정보</a></li><br>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <h2 class="f-mid-tit">Mercedes me</h2>
+                        <div>
+                            <ol>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/mercedes-me/faq.html">자주하는
+                                        질문</a></li><br>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <h2 class="f-mid-tit">Mercedes Benz Promise</h2>
+                        <div>
+                            <ol>
+                                <li><a href="https://www.givenrace.com/#/">Mercedes-Benz GIVE</a></li><br>
+                                <li><a href="https://www.all-together.or.kr/main#/">Mercedes-Benz All<br>Together</a>
+                                </li><br>
+                                <li><a href="https://www.mobileacademy.kr/main#/">Mercedes-Benz Mobile<br>Academy</a>
+                                </li><br>
+                                <li><a href="https://www.mobilekids.kr/main#/">Mercedes-Benz<br>MobileKids</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <h2 class="f-mid-tit">패밀리 사이트</h2>
+                        <div>
+                            <ol>
+                                <li><a href="https://www.mercedes-benz.co.kr/vans/ko">Van</a></li>
+                                <br>
+                                <li><a href="https://www.mercedes-benz-financial.co.kr/?utm_source=oneweb">메르세데스-벤츠
+                                        파이낸셜<br>서비스 코리아</a></li><br>
+                                <li><a href="https://www.mercedes-benz.co.kr/passengercars/buy/MBM/introduction.html">MB
+                                        Mobility Korea</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 풋터 로우 -->
+            <div class="f-low">
+                <div class="container">
+                    <div class="div1">
+                        <ol class="f-list">
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/copyright.html">&#169;
+                                    2022 메르세데스-벤츠 코리아(주)/메르세데스-벤츠 파이낸셜 서비스 코리아(주)/메르세데스-벤츠 모빌리티
+                                    코리아(주)</a>
+                            </li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/privacy-statement.html">개인정보처리방침(MBK)</a>
+                            </li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/mbfsk.html">개인정보처리방침(MBFSK)</a>
+                            </li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/MBMK.html">개인정보처리방침(MBMK)</a>
+                            </li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/Mmp.html">개인정보처리방침(MmP)</a>
+                            </li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/daimler-privacy.html">Mercedes-Benz
+                                    AG Privacy Statement</a></li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/cookies.html">쿠키</a>
+                            </li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/emh-policy.html">법적
+                                    고지</a></li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/emh-consent.html">온라인
+                                    세일즈 이용약관</a></li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/emh-dealers.html">딜러사
+                                    정보</a></li>
+                            <li><a
+                                    href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/location-information.html">위치정보사업
+                                    이용약관</a></li>
+                        </ol>
+                        <br>
+                        <span>메르세데스-벤츠 코리아㈜ 서울특별시 중구 한강대로 416 서울 스퀘어 9층 (우) 04637 대표자 성명 : 토마스허버트클라인 사업자 등록번호:
+                            220-86-46545 호스팅서비스 제공자: Amazon Web Services, Inc. 고객 컨택 센터 경기도 부천시 원미구 부일로 223 투나 8층
+                            (우)
+                            14623 전화: 080-001-1886 이메일 : mbk_cs@mercedes-benz.com</span>
+                        <br><br><br>
+                        <span>메르세데스-벤츠 코리아㈜는 통신판매중개자이고 통신판매의 당사자가 아니며, 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.
+                        </span>
+                    </div>
+                    <div class="div2">
+                        <ol>
+                            <li><a href="https://www.facebook.com/MercedesBenzKorea/" id="fb">
+                                    <img src="img/facebook.png" alt="">
+                                </a></li>
+                            <li><a href="https://www.instagram.com/mercedesbenzkr/" id="insta">
+                                    <img src="img/instagram.png" alt="">
+                                </a></li>
+                            <li><a href="https://www.youtube.com/channel/UChbw0qKAMdFf6TlC0T3Z_zw" id="yt">
+                                    <img src="img/youtube.png" alt="">
+                                </a></li>
+                        </ol>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 부트스트랩 자바스크립트 연결 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> -->
+
+
+    <!-- java script 활용 -->
+    <script>
+        // 이미지 등장 애니메이션
+
+        let observer = new IntersectionObserver((e) => {
+            e.forEach((image) => {
+                if (image.isIntersecting) {
+                    image.target.style.transform = 'translate(0, 0)';
+                }
+            })
+        })
+
+        let banner = document.querySelector('#banner img');
+        observer.observe(banner)
+
+    </script>
+
+    <script>
+
+        // user 로그인 팝업
+
+        var user_pop = document.querySelector('.user_open');
+        var pop_info = document.querySelector('.pop_wrap');
+        var pop_over = document.querySelector('.popup_overlay');
+
+        pop_over.addEventListener('click', function () {
+            pop_over.style.display = 'none';
+            pop_info.style.top = -500 + 'px';
+            pop_info.style.opacity = '0';
+
+
+        });
+
+        user_pop.addEventListener('click', function () {
+            pop_over.style.display = 'block';
+            pop_info.style.top = 100 + 'px';
+            pop_info.style.opacity = '1';
+
+        });
+
+    </script>
+
+    <!-- 맨 위로 버튼 -->
+    <script>
+        var upside = document.querySelector('.upSide');
+
+        upside.addEventListener('click', function () {
+            window.scrollTo(0, 0,);
+        })
+
+
+    </script>
+</body>
+
+</html>

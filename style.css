@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+/* World Layout */
+
+#header_top {
+    background-color: black;
+    height: 95px;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.5);
+    font-size: 20px;
+    color: white;
+}
+
+#header_nav {
+    background-color: black;
+    height: 64px;
+}
+
+#banner {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    display: flex;
+}
+
+/* #banner {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+
+#contents1 {
+    height: 800px;
+}
+
+#contents2 {
+    width: 100%;
+    height: 200px;
+}
+
+h1 {
+    margin-top: 80px;
+    margin-left: 5%;
+    font-size: 40px;
+}
+
+
+#footer {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+/* World Layout */
+/* container */
+
+.container {
+    margin: 0px 7% 0px 7%;
+    padding: 15px 0 3px 0;
+    display: flex;
+}
+
+/* container */
+/* header_top */
+
+
+/* #header_top #logo {} */
+
+#header_top #logo img {
+    width: 65px;
+    height: 65px;
+}
+
+#header_top #tit {
+    margin-left: 5%;
+    width: 150px;
+}
+
+#header_top #tit a {
+    font-size: 18px;
+    color: rgb(248, 248, 248);
+    margin-top: 45px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Old Standard TT', serif;
+
+}
+
+#header_top #sub-tit {
+    padding-top: 23px;
+    margin: 0 0px 0 60%;
+    width: 200px;
+}
+
+#header_top #sub-tit #sub_name {
+    color: rgb(178, 178, 178);
+    font-size: 12px;
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+#header_top #user {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+    text-align: center;
+}
+
+#header_top #user a {
+    text-align: center;
+}
+
+#header_top #user a img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+#header_top #user:hover {
+    background-color: rgba(128, 128, 128, 0.497);
+}
+
+/* user 팝업 */
+
+.popup_overlay {
+    display: none;
+    position: fixed;
+    background: black;
+    margin: 0 auto;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+#pop_info {
+    display: block;
+    position: fixed;
+    opacity: 0;
+    top: -500px;
+    left: 67%;
+    height: 300px;
+    width: 400px;
+    z-index: 10;
+    background-color: white;
+    transition: all .5s;
+
+}
+
+#pop_info .pop_inner {
+    color: black;
+    padding: 0 24px 24px 24px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#pop_info .pop_inner h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Noto Serif KR', serif;
+    margin-left: 0;
+}
+
+#pop_info .pop_inner p {
+    font-size: 18px;
+    height: 50px;
+    color: rgb(52, 52, 52);
+}
+
+#pop_info .pop_inner #pop_btn1 {
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: rgb(46, 106, 216);
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 1%;
+    transition: all .5s;
+    font-size: 16px;
+}
+
+#pop_info .pop_inner #pop_btn1:hover {
+    background-color: rgb(32, 73, 150);
+    cursor: pointer;
+}
+
+#pop_info .pop_inner #pop_btn2 {
+    width: 100%;
+    height: 60px;
+    color: rgb(46, 106, 216);
+    background-color: white;
+    border: none;
+    border-radius: 1%;
+    transition: all .5s;
+    font-size: 16px;
+}
+
+#pop_info .pop_inner #pop_btn2:hover {
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+
+/* Header-nav */
+
+#header_nav .container {
+    display: flex;
+    padding: 0 0 0 1%;
+}
+
+#header_nav .container button {
+    padding: 16px;
+    color: rgb(207, 207, 207);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#header_nav .container button span {
+    display: inline-block;
+    margin-right: 15px;
+    transform: translateY(4px);
+    width: 20px;
+    height: 20px;
+    background-image: url(img/car.png);
+    background-size: cover;
+}
+
+#header_nav .container button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+/* banner */
+
+#banner img {
+    width: 1000px;
+    height: 700px;
+}
+
+#banner div {
+    width: 370px;
+}
+
+#banner div h1 {
+    margin-left: 0;
+    font-size: 50px;
+    color: white;
+    font-family: 'Old Standard TT', serif;
+}
+
+#banner div h2 {
+    color: rgb(169, 169, 169);
+    line-height: 30px;
+}
+
+#banner div .btn1 {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 1%;
+    font-size: 16px;
+}
+
+#banner div .btn1:hover {
+    cursor: pointer;
+}
+
+#banner div .btn2 {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: rgb(46, 106, 216);
+    border: none;
+    border-radius: 1%;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+#banner div .btn2:hover {
+    cursor: pointer;
+}
+
+
+/* 콘텐츠1 */
+
+#contents1 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#contents1 h1 {
+    margin-left: 0px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-family: 'Old Standard TT', serif;
+}
+
+/* 콘텐츠 스크롤 */
+
+.cont {
+    width: 1430px;
+    height: 650px;
+    /* display: flex; */
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.cont .card {
+    width: 350px;
+    height: 600px;
+    border: 1px solid rgb(233, 233, 233);
+    border-right: 0px;
+    display: inline-block;
+    margin-right: 50px;
+    box-shadow: 1px 1px 2px #c9c9c9;
+}
+
+.cont .card .card-box {
+    width: inherit;
+    height: inherit;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 각 컨텐츠 */
+
+
+.card img {
+    width: 350px;
+    height: auto;
+}
+
+.card-box h2 {
+    margin: 30px 35px 10px 35px;
+    font-size: 21px;
+    white-space: noraml;
+    line-height: 25px;
+}
+
+.card-box h3 {
+    margin: 0px 35px 0px 35px;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(57, 57, 57);
+    white-space: normal;
+    height: 130px;
+}
+
+.card-box .card-btn {
+    margin: 60px 30px 40px 30px;
+    text-align: center;
+}
+
+.card-btn button {
+    background-color: rgb(48, 112, 232);
+    color: white;
+    border: none;
+    border-radius: 1%;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+}
+
+.card-btn button:hover {
+    background-color: rgb(37, 88, 182);
+    cursor: pointer;
+}
+
+.card-box .card-btn2 {
+    margin: 0 30px 40px 30px;
+    text-align: center;
+}
+
+.card-btn2 button {
+    background-color: rgb(48, 112, 232);
+    color: white;
+    border: none;
+    border-radius: 1%;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+}
+
+.card-btn2 button:hover {
+    background-color: rgb(37, 88, 182);
+    cursor: pointer;
+}
+
+.card-btn2 .cb2-btn1 {
+    background-color: white;
+    color: rgb(108, 108, 108);
+    border: 1px solid rgb(210, 210, 210);
+    margin-bottom: 8px;
+    margin-top:
+}
+
+.card-btn2 .cb2-btn1:hover {
+    background-color: rgb(222, 222, 222);
+    cursor: pointer;
+}
+
+/* 풋터 - 탑 */
+
+.f-top .container {
+    padding-top: 40px;
+    /* margin-left: 47%; */
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+
+.f-top .container button {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    background-image: url(img/upside.png);
+    background-size: cover;
+}
+
+.f-top .container button:hover {
+    cursor: pointer;
+}
+
+/* .f-top .container span {
+    display: block;
+    color: white
+}
+
+.f-top .container span:hover {
+    cursor: pointer;
+} */
+
+.f-top .container label {
+    display: block;
+    color: white;
+}
+
+.f-top .container label:hover {
+    cursor: pointer;
+}
+
+/* 풋터 - 미드 */
+
+.f-mid .container {
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 60px;
+}
+
+.f-mid .container .f-mid-tit {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.f-mid .container .cont-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-mid .container .cont-container ol li {
+    list-style: none;
+}
+
+.f-mid .container .cont-container ol li a {
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    font-size: 15px;
+}
+
+.f-mid .container .cont-container ol li a:hover {
+    color: white;
+}
+
+
+/* 푸터 로우 */
+
+.f-low .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.f-low .container .div1 .f-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.f-low .container .div1 .f-list li {
+    list-style: none;
+}
+
+.f-low .container .div1 .f-list li a {
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+
+}
+
+.f-low .container .div1 .f-list li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.f-low .container .div1 span {
+    color: white;
+}
+
+.f-low .container .div2 {
+    width: 30%;
+    margin: 10px;
+}
+
+.f-low .container .div2 ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.f-low .container .div2 ol li #fb img {
+    width: 25px;
+    height: 25px;
+    margin: 0 30px 0 100px;
+}
+
+.f-low .container .div2 ol li #insta img {
+    width: 25px;
+    height: 25px;
+    margin: 0 30px 0 0;
+}
+
+.f-low .container .div2 ol li #yt img {
+    width: 25px;
+    height: 25px;
+}
