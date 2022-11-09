@@ -19,7 +19,6 @@
 }
 
 #banner {
-    width: 100%;
     height: 700px;
     background-color: black;
     display: flex;
@@ -40,7 +39,6 @@
 }
 
 #contents2 {
-    width: 100%;
     height: 200px;
 }
 
@@ -262,6 +260,7 @@ h1 {
 
 #banner div {
     width: 370px;
+    width: 25%;
 }
 
 #banner div h1 {
@@ -580,6 +579,8 @@ h1 {
     }
 
     #header_top .container {
+        width: 100;
+        display: flex;
         margin: 0 7% 0 7%;
     }
 
@@ -593,14 +594,29 @@ h1 {
 
     #header_top .container #logo {
         margin-left: 47%;
+        margin-right: 25%;
     }
 
-    #header_top .container #user {
-        margin-left: 35%;
-    }
+    #header_top .container #user {}
 
     #header_nav {
         display: none;
+    }
+
+    /* 로그인 팝업 반응형 위치 변경 */
+
+    #pop_info {
+        display: block;
+        position: fixed;
+        opacity: 0;
+        top: -500px;
+        left: 0;
+        height: 300px;
+        width: 400px;
+        z-index: 10;
+        background-color: white;
+        transition: all .5s;
+
     }
 
 
@@ -643,12 +659,14 @@ h1 {
     }
 
     .f-low .container .div2 {
-        width: 100%;
+        max-width: 400px;
         margin-left: 10%;
     }
 
     .f-low .container .div2 ol {
+        width: 80%;
         justify-content: flex-start;
+        margin-right: 0;
     }
 
     .f-low .container .div2 ol li #fb img {
