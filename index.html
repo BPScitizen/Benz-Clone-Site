@@ -23,12 +23,12 @@
         rel="stylesheet">
 
     <!-- 애니메이션용 스타일  -->
-    <style>
+    <!-- <style>
         #banner img {
             transform: translate(1000px, 0);
             transition: all 2s;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -87,7 +87,7 @@
             <!-- <div id="banner">
             </div> -->
             <div>
-                <h1>The Benz<br>E-Class</h1> <br><br><br>
+                <h1>The Benz E-Class</h1> <br><br><br>
 
 
                 <h2>모든 순간, 모든 감각을 깨우다.</h2>
@@ -373,16 +373,16 @@
     <script>
         // 이미지 등장 애니메이션
 
-        let observer = new IntersectionObserver((e) => {
-            e.forEach((image) => {
-                if (image.isIntersecting) {
-                    image.target.style.transform = 'translate(0, 0)';
-                }
-            })
-        })
+        // let observer = new IntersectionObserver((e) => {
+        //     e.forEach((image) => {
+        //         if (image.isIntersecting) {
+        //             image.target.style.transform = 'translate(0, 0)';
+        //         }
+        //     })
+        // })
 
-        let banner = document.querySelector('#banner img');
-        observer.observe(banner)
+        // let banner = document.querySelector('#banner img');
+        // observer.observe(banner)
 
     </script>
 
@@ -420,6 +420,29 @@
         })
 
 
+    </script>
+
+    <!-- 반응형 스크립트 동작 -->
+
+    <script>
+        let observer = new IntersectionObserver((e) => {
+            e.forEach((image) => {
+                if (image.isIntersecting) {
+                    image.target.style.transform = 'translate(0, 0)';
+                }
+            })
+        })
+
+        let banner = document.querySelector('#banner img');
+        observer.observe(banner)
+
+        // window.onresize = function () {
+        //     document.location.reload();
+        // };
+
+        // window.onresize = function () {
+        //     document.location.reload();
+        // };
     </script>
 </body>
 
