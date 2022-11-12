@@ -87,13 +87,12 @@ h1 {
     display: inline-block;
     text-decoration: none;
     font-family: 'Old Standard TT', serif;
-
 }
 
 #header_top #sub-tit {
     padding-top: 23px;
     margin: 0 0px 0 60%;
-    width: 200px;
+    width: auto;
 }
 
 #header_top #sub-tit #sub_name {
@@ -319,7 +318,7 @@ h1 {
     margin-top: 90px;
     margin-bottom: 60px;
     font-size: 50px;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Old Standard TT', serif, 'Nanum Myeongjo';
 }
 
 /* 콘텐츠 스크롤 */
@@ -504,6 +503,75 @@ h1 {
 }
 
 
+/* 풋터 미드 휴대폰 사이즈 */
+
+.f-mid-phone {
+    display: none;
+}
+
+.f-mid-phone .container {
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f-mid-phone .container .cont-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+
+.f-mid-phone .container .cont-container button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    display: flex;
+    /* border-bottom: 1px solid gray; */
+    padding-bottom: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.f-mid-phone .container .cont-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+.f-mid-phone .container .cont-container .f-mid-tit {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: start;
+    margin-right: 70%;
+    padding-top: 10px;
+}
+
+.f-mid-phone .container .cont-container div {
+    display: none;
+}
+
+.f-mid-phone .container .cont-container ol li {
+    list-style: none;
+}
+
+.f-mid-phone .container .cont-container ol li a {
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    font-size: 15px;
+}
+
+.f-mid-phone .container .cont-container ol li a:hover {
+    color: white;
+}
+
+
+
 /* 푸터 로우 */
 
 .f-low .container {
@@ -582,6 +650,7 @@ h1 {
         width: 100;
         display: flex;
         margin: 0 7% 0 7%;
+
     }
 
     #header_top .container #tit {
@@ -593,11 +662,13 @@ h1 {
     }
 
     #header_top .container #logo {
-        margin-left: 47%;
-        margin-right: 25%;
+        margin-left: 44%;
+        /* margin-right: 25%; */
     }
 
-    #header_top .container #user {}
+    #header_top .container #user {
+        margin-left: 30%;
+    }
 
     #header_nav {
         display: none;
@@ -645,12 +716,23 @@ h1 {
     #banner div h1 {
         width: 70%;
         margin-left: 14%;
+        margin-top: 50px;
     }
 
 
     /* 가로 스크롤 컨텐츠 축소 */
     .cont {
         width: 100%;
+    }
+
+    /* 풋터 미드 휴대폰 용도 */
+
+    .f-mid {
+        display: none;
+    }
+
+    .f-mid-phone {
+        display: flex;
     }
 
     /* 풋터 로우 컨텐츠 수직 배열 */
@@ -673,21 +755,7 @@ h1 {
         margin-left: 0;
     }
 
-    .f-mid .container {
-        display: flex;
-        flex-direction: column;
-        text-align: start
-    }
 
-
-    .f-mid .container .cont-container h2 {
-        border-bottom: 1px solid gray;
-        padding-bottom: 15px;
-    }
-
-    .f-mid .container .cont-container div {
-        display: none;
-    }
 }
 
 
@@ -733,4 +801,11 @@ h1 {
     }
 
 
+}
+
+@media only screen and (min-width: 1541px) {
+
+    .cont {
+        width: 100%;
+    }
 }

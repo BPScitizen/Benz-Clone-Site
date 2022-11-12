@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Old+Standard+TT&family=Tinos:ital@1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+KR&family=Old+Standard+TT&family=Tinos:ital@1&display=swap"
         rel="stylesheet">
 
     <!-- 애니메이션용 스타일  -->
@@ -292,6 +292,106 @@
                 </div>
             </div>
 
+
+            <!-- 풋터 미드 (휴대폰 사이즈 전용) -->
+            <div class="f-mid-phone">
+                <div class="container">
+                    <div class="cont-container">
+                        <button type="button">
+                            <h2 class="f-mid-tit">차량 정보</h2>
+                            <img src="img/down-arrow.png" alt="">
+                        </button>
+                        <div>
+                            <ol>
+                                <li><a href="">모델 둘러보기</a></li><br>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/catalog/stage.module.html">카탈로그
+                                        다운로드</a></li><br>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/catalog/price.module.html">가격표
+                                        다운로드</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <button type="button">
+                            <h2 class="f-mid-tit">온라인 서비스</h2>
+                            <img src="img/down-arrow.png" alt="">
+                        </button>
+                        <div>
+                            <ol>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/dealer-locator.html">딜러
+                                        검색</a></li><br>
+                                <li><a
+                                        href="https://shop.mercedes-benz.com/ko-kr/shop/vehicle/srp/used?sort=relevance&assortment=vehicle">인증
+                                        중고차 차량 검색</a></li><br>
+                                <li><a href="https://www.mercedes-benz-financial.co.kr/payment/">월 납입금 계산기</a></li><br>
+                                <li><a href="https://rentalquotationsmb.com/">장기렌터카 견적요청</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <button type="button">
+                            <h2 class="f-mid-tit">부품 및 리콜정보</h2>
+                            <img src="img/down-arrow.png" alt="">
+                        </button>
+                        <div>
+                            <ol>
+                                <li><a href="https://parts-price.mercedes-benz.co.kr/?owda=misc">부품가격조회</a></li><br>
+                                <li><a href="https://www.car.go.kr/ri/stat/list.do">리콜정보</a></li><br>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <button type="button">
+                            <h2 class="f-mid-tit">Mercedes me</h2>
+                            <img src="img/down-arrow.png" alt="">
+                        </button>
+                        <div>
+                            <ol>
+                                <li><a
+                                        href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/mercedes-me/faq.html">자주하는
+                                        질문</a></li><br>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <button type="button">
+                            <h2 class="f-mid-tit">Mercedes Benz Promise</h2>
+                            <img src="img/down-arrow.png" alt="">
+                        </button>
+                        <div>
+                            <ol>
+                                <li><a href="https://www.givenrace.com/#/">Mercedes-Benz GIVE</a></li><br>
+                                <li><a href="https://www.all-together.or.kr/main#/">Mercedes-Benz All<br>Together</a>
+                                </li><br>
+                                <li><a href="https://www.mobileacademy.kr/main#/">Mercedes-Benz Mobile<br>Academy</a>
+                                </li><br>
+                                <li><a href="https://www.mobilekids.kr/main#/">Mercedes-Benz<br>MobileKids</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="cont-container">
+                        <button type="button">
+                            <h2 class="f-mid-tit">패밀리 사이트</h2>
+                            <img src="img/down-arrow.png" alt="">
+                        </button>
+                        <div>
+                            <ol>
+                                <li><a href="https://www.mercedes-benz.co.kr/vans/ko">Van</a></li>
+                                <br>
+                                <li><a href="https://www.mercedes-benz-financial.co.kr/?utm_source=oneweb">메르세데스-벤츠
+                                        파이낸셜<br>서비스 코리아</a></li><br>
+                                <li><a href="https://www.mercedes-benz.co.kr/passengercars/buy/MBM/introduction.html">MB
+                                        Mobility Korea</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- 풋터 로우 -->
             <div class="f-low">
                 <div class="container">
@@ -417,6 +517,13 @@
 
         upside.addEventListener('click', function () {
             window.scrollTo(0, 0,);
+        })
+
+        var button = document.querySelector('.cont-container button')
+
+        button.addEventListener('click', function () {
+            document.querySelector('.cont-container').style.height = 100 + 'px';
+            document.querySelector('.cont-container div').style.display = 'flex';
         })
 
 
